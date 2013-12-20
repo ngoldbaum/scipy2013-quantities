@@ -1,210 +1,6 @@
 [
   {
     "facts": {
-      "LOC": 3448,
-      "Most recent release": "2013-05",
-      "Implementation": "Container",
-      "PyPI": "astropy",
-      "URL": "https://astropy.readthedocs.org/en/latest/units/index.html",
-      "First release": "2013-01"
-    },
-    "compatibility": {
-      "unary_ufuncs": {
-        "square": true,
-        "arcsinh": true,
-        "rint": true,
-        "sign": true,
-        "conjugate": true,
-        "tan": true,
-        "absolute": true,
-        "deg2rad": true,
-        "log": true,
-        "floor": true,
-        "exp2": true,
-        "negative": true,
-        "sqrt": true,
-        "arctan": true,
-        "log10": true,
-        "sin": true,
-        "rad2deg": true,
-        "log2": true,
-        "arcsin": true,
-        "cos": true,
-        "ceil": true,
-        "arctanh": true,
-        "sinh": true,
-        "cosh": true,
-        "trunc": true,
-        "expm1": true,
-        "reciprocal": true,
-        "tanh": true,
-        "arccosh": true,
-        "exp": true,
-        "arccos": true,
-        "log1p": true,
-        "ones_like": true
-      },
-      "binary_compatible_ops": {
-        "gt": true,
-        "ge": true,
-        "le": true,
-        "sub": true,
-        "pow": false,
-        "lt": true,
-        "ne": true,
-        "add": true,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": true,
-        "mod": false
-      },
-      "binary_compatible_ufuncs": {
-        "not_equal": true,
-        "logaddexp2": true,
-        "divide": true,
-        "power": true,
-        "less": true,
-        "remainder": true,
-        "true_divide": true,
-        "minimum": true,
-        "equal": true,
-        "arctan2": true,
-        "maximum": true,
-        "less_equal": true,
-        "add": true,
-        "hypot": true,
-        "fmod": true,
-        "multiply": true,
-        "greater_equal": true,
-        "floor_divide": true,
-        "subtract": true,
-        "logaddexp": true,
-        "greater": true
-      },
-      "binary_same_ufuncs": {
-        "not_equal": true,
-        "logaddexp2": true,
-        "divide": true,
-        "power": true,
-        "less": true,
-        "remainder": true,
-        "true_divide": true,
-        "minimum": true,
-        "equal": true,
-        "arctan2": true,
-        "maximum": true,
-        "less_equal": true,
-        "add": true,
-        "hypot": true,
-        "fmod": true,
-        "multiply": true,
-        "greater_equal": true,
-        "floor_divide": true,
-        "subtract": true,
-        "logaddexp": true,
-        "greater": true
-      },
-      "unary_ops": {
-        "neg": true,
-        "abs": true,
-        "pos": true
-      },
-      "syntax": {
-        "print": "[  5.  10.] m",
-        "shape": false
-      },
-      "other_numpy": {
-        "sort": true,
-        "concatenate": true,
-        "median": true,
-        "argsort": true,
-        "std": true,
-        "where": true,
-        "mean": true
-      },
-      "binary_different_ufuncs": {
-        "not_equal": true,
-        "logaddexp2": true,
-        "divide": true,
-        "power": true,
-        "less": true,
-        "remainder": true,
-        "true_divide": true,
-        "minimum": true,
-        "equal": true,
-        "arctan2": true,
-        "maximum": true,
-        "less_equal": true,
-        "add": true,
-        "hypot": true,
-        "fmod": true,
-        "multiply": true,
-        "greater_equal": true,
-        "floor_divide": true,
-        "subtract": true,
-        "logaddexp": true,
-        "greater": true
-      },
-      "binary_same_ops": {
-        "gt": true,
-        "ge": true,
-        "le": true,
-        "sub": true,
-        "pow": false,
-        "lt": true,
-        "ne": true,
-        "add": true,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": true,
-        "mod": false
-      },
-      "binary_different_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
-        "sub": false,
-        "pow": false,
-        "lt": false,
-        "ne": false,
-        "add": false,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": false,
-        "mod": false
-      }
-    },
-    "speed": {
-      "make": {
-        "std": 0.22892204527387805,
-        "np_rel": 0.98305001042569773,
-        "mean": 0.29255755960124813
-      },
-      "ufunc": {
-        "std": 13.916650956096616,
-        "np_rel": 2.9082919597717134,
-        "mean": 30.005030436058568
-      },
-      "ops": {
-        "std": 14.476035526829083,
-        "np_rel": 20.0,
-        "mean": 16.08358670587409
-      }
-    },
-    "name": "astropy.units",
-    "syntax": {
-      "print": "5.0 m",
-      "make": "multiply"
-    }
-  },
-  {
-    "facts": {
       "LOC": 403,
       "Most recent release": "2010-07",
       "Implementation": "Container",
@@ -322,11 +118,11 @@
       "other_numpy": {
         "sort": true,
         "concatenate": false,
-        "median": true,
+        "median": false,
         "argsort": true,
         "std": false,
         "where": true,
-        "mean": true
+        "mean": false
       },
       "binary_different_ufuncs": {
         "not_equal": false,
@@ -386,19 +182,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.064549303882370568,
-        "np_rel": 0.98973636147065835,
-        "mean": 0.081413412747317795
+        "std": 0.061977908954787504,
+        "np_rel": 0.97959344004713733,
+        "mean": 0.081447705830613226
       },
       "ufunc": {
-        "std": 0.73134252805826216,
-        "np_rel": 2.2397001024736358,
-        "mean": 1.4098147823385996
+        "std": 0.33091343095422382,
+        "np_rel": 3.4120259805146143,
+        "mean": 1.1152061697554916
       },
       "ops": {
-        "std": 0.54540974464461112,
-        "np_rel": 1.5300301235425811,
-        "mean": 0.76224869244719207
+        "std": 0.24952366220243252,
+        "np_rel": 1.820463343039914,
+        "mean": 0.50840639088251816
       }
     },
     "name": "dimensions.py",
@@ -526,11 +322,11 @@
       "other_numpy": {
         "sort": true,
         "concatenate": true,
-        "median": true,
+        "median": false,
         "argsort": true,
-        "std": true,
+        "std": false,
         "where": true,
-        "mean": true
+        "mean": false
       },
       "binary_different_ufuncs": {
         "not_equal": false,
@@ -590,9 +386,9 @@
     },
     "speed": {
       "make": {
-        "std": 29.184779583620635,
-        "np_rel": 0.99600280014289355,
-        "mean": 23.666349175858173
+        "std": 30.640716892725703,
+        "np_rel": 1.0033538284719661,
+        "mean": 24.66298619361773
       },
       "ufunc": {
         "std": -1,
@@ -731,11 +527,11 @@
       "other_numpy": {
         "sort": true,
         "concatenate": false,
-        "median": true,
+        "median": false,
         "argsort": true,
         "std": false,
         "where": false,
-        "mean": true
+        "mean": false
       },
       "binary_different_ufuncs": {
         "not_equal": false,
@@ -795,19 +591,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.06061706071243507,
-        "np_rel": 0.99353725946552507,
-        "mean": 0.07807555263989592
+        "std": 0.059884292083171822,
+        "np_rel": 1.0058714399298689,
+        "mean": 0.080570782700630089
       },
       "ufunc": {
-        "std": 0.77026467902778972,
-        "np_rel": 3.0220488132686816,
-        "mean": 1.7037359002518326
+        "std": 0.64348679409853671,
+        "np_rel": 4.9663177899451547,
+        "mean": 1.7581786194892779
       },
       "ops": {
-        "std": 0.59838013588903016,
-        "np_rel": 2.3722432760587218,
-        "mean": 1.0528825733759632
+        "std": 0.43710722362431614,
+        "np_rel": 3.5096621835670883,
+        "mean": 0.9950383068764046
       }
     },
     "name": "ipython-physics",
@@ -935,11 +731,11 @@
       "other_numpy": {
         "sort": true,
         "concatenate": false,
-        "median": true,
+        "median": false,
         "argsort": true,
         "std": false,
         "where": false,
-        "mean": true
+        "mean": false
       },
       "binary_different_ufuncs": {
         "not_equal": false,
@@ -999,19 +795,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.077950062319402311,
-        "np_rel": 0.98426910768072284,
-        "mean": 0.13660894681329597
+        "std": 0.089733769756211335,
+        "np_rel": 0.98709101853046133,
+        "mean": 0.14996691925884925
       },
       "ufunc": {
-        "std": 1.0314788963276285,
-        "np_rel": 1.8894188753076306,
-        "mean": 1.8040839939901274
+        "std": 0.94885290843849868,
+        "np_rel": 2.2187433103867864,
+        "mean": 1.9295150286530796
       },
       "ops": {
-        "std": 0.54545048655713213,
-        "np_rel": 1.3700990622699885,
-        "mean": 0.7021851735572292
+        "std": 0.49587545253373699,
+        "np_rel": 1.4833112138791593,
+        "mean": 0.70815053704666764
       }
     },
     "name": "magnitude",
@@ -1203,230 +999,25 @@
     },
     "speed": {
       "make": {
-        "std": 0.06333365614896469,
-        "np_rel": 0.98972655251725017,
-        "mean": 0.063242977612639126
+        "std": 0.06359255838048998,
+        "np_rel": 0.96912378303198887,
+        "mean": 0.068272629829302225
       },
       "ufunc": {
-        "std": 11.067231554193606,
-        "np_rel": 0.91669375506865425,
-        "mean": 9.4268093370411492
+        "std": 11.292417650355457,
+        "np_rel": 0.94628943394048803,
+        "mean": 9.6937646604564094
       },
       "ops": {
-        "std": 2.4470367051635633,
-        "np_rel": 0.90622531980164511,
-        "mean": 2.2035967813779229
+        "std": 1.9125091971326658,
+        "np_rel": 1.0067093560275808,
+        "mean": 1.7516841627147099
       }
     },
     "name": "numericalunits",
     "syntax": {
-      "print": "10.1663291883",
+      "print": "1.67836694562",
       "make": "multiply"
-    }
-  },
-  {
-    "facts": {
-      "LOC": 486,
-      "Most recent release": "2012-10",
-      "Implementation": "Container",
-      "PyPI": false,
-      "URL": "https://bitbucket.org/khinsen/scientificpython",
-      "First release": "2005-12",
-      "hg": "https://bitbucket.org/khinsen/scientificpython"
-    },
-    "compatibility": {
-      "unary_ufuncs": {
-        "square": true,
-        "arcsinh": false,
-        "rint": false,
-        "sign": false,
-        "conjugate": false,
-        "tan": false,
-        "absolute": true,
-        "deg2rad": false,
-        "log": false,
-        "floor": false,
-        "exp2": false,
-        "negative": true,
-        "sqrt": false,
-        "arctan": false,
-        "log10": false,
-        "sin": false,
-        "rad2deg": false,
-        "log2": false,
-        "arcsin": false,
-        "cos": false,
-        "ceil": false,
-        "arctanh": false,
-        "sinh": false,
-        "cosh": false,
-        "trunc": false,
-        "expm1": false,
-        "reciprocal": true,
-        "tanh": false,
-        "arccosh": false,
-        "exp": false,
-        "arccos": false,
-        "log1p": false,
-        "ones_like": true
-      },
-      "binary_compatible_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
-        "sub": true,
-        "pow": false,
-        "lt": false,
-        "ne": false,
-        "add": true,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": false,
-        "mod": false
-      },
-      "binary_compatible_ufuncs": {
-        "not_equal": false,
-        "logaddexp2": false,
-        "divide": true,
-        "power": false,
-        "less": false,
-        "remainder": false,
-        "true_divide": true,
-        "minimum": false,
-        "equal": false,
-        "arctan2": false,
-        "maximum": false,
-        "less_equal": false,
-        "add": true,
-        "hypot": false,
-        "fmod": false,
-        "multiply": true,
-        "greater_equal": false,
-        "floor_divide": false,
-        "subtract": true,
-        "logaddexp": false,
-        "greater": false
-      },
-      "binary_same_ufuncs": {
-        "not_equal": false,
-        "logaddexp2": false,
-        "divide": true,
-        "power": false,
-        "less": false,
-        "remainder": false,
-        "true_divide": true,
-        "minimum": false,
-        "equal": false,
-        "arctan2": false,
-        "maximum": false,
-        "less_equal": false,
-        "add": true,
-        "hypot": false,
-        "fmod": false,
-        "multiply": true,
-        "greater_equal": false,
-        "floor_divide": false,
-        "subtract": true,
-        "logaddexp": false,
-        "greater": false
-      },
-      "unary_ops": {
-        "neg": true,
-        "abs": true,
-        "pos": true
-      },
-      "syntax": {
-        "print": "[5.0, 10.0] m",
-        "shape": false
-      },
-      "other_numpy": {
-        "sort": true,
-        "concatenate": false,
-        "median": true,
-        "argsort": true,
-        "std": false,
-        "where": false,
-        "mean": true
-      },
-      "binary_different_ufuncs": {
-        "not_equal": false,
-        "logaddexp2": false,
-        "divide": true,
-        "power": false,
-        "less": false,
-        "remainder": false,
-        "true_divide": true,
-        "minimum": false,
-        "equal": false,
-        "arctan2": false,
-        "maximum": false,
-        "less_equal": false,
-        "add": false,
-        "hypot": false,
-        "fmod": false,
-        "multiply": true,
-        "greater_equal": false,
-        "floor_divide": false,
-        "subtract": false,
-        "logaddexp": false,
-        "greater": false
-      },
-      "binary_same_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
-        "sub": true,
-        "pow": false,
-        "lt": false,
-        "ne": false,
-        "add": true,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": false,
-        "mod": false
-      },
-      "binary_different_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
-        "sub": false,
-        "pow": false,
-        "lt": false,
-        "ne": false,
-        "add": false,
-        "floordiv": false,
-        "truediv": true,
-        "mul": true,
-        "div": true,
-        "eq": false,
-        "mod": false
-      }
-    },
-    "speed": {
-      "make": {
-        "std": 0.063896446302151202,
-        "np_rel": 0.99356919665356314,
-        "mean": 0.080484233490408286
-      },
-      "ufunc": {
-        "std": 0.7580356533586412,
-        "np_rel": 3.135817882147109,
-        "mean": 1.7678394709547904
-      },
-      "ops": {
-        "std": 0.58663855369353979,
-        "np_rel": 2.422793744954852,
-        "mean": 1.0537758265456107
-      }
-    },
-    "name": "SP.PhysicalQuantities",
-    "syntax": {
-      "print": "5.0 m",
-      "make": "constructor"
     }
   },
   {
@@ -1475,9 +1066,9 @@
         "ones_like": true
       },
       "binary_compatible_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
+        "gt": true,
+        "ge": true,
+        "le": true,
         "sub": true,
         "pow": false,
         "lt": true,
@@ -1551,7 +1142,7 @@
         "median": true,
         "argsort": true,
         "std": true,
-        "where": false,
+        "where": true,
         "mean": true
       },
       "binary_different_ufuncs": {
@@ -1578,9 +1169,9 @@
         "greater": false
       },
       "binary_same_ops": {
-        "gt": false,
-        "ge": false,
-        "le": false,
+        "gt": true,
+        "ge": true,
+        "le": true,
         "sub": true,
         "pow": false,
         "lt": true,
@@ -1612,19 +1203,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.06131769690102909,
-        "np_rel": 0.99481483137027016,
-        "mean": 0.2180599186518421
+        "std": 0.19480684703894177,
+        "np_rel": 0.97341757687143493,
+        "mean": 0.33385622991274483
       },
       "ufunc": {
-        "std": 7.9767192634227992,
-        "np_rel": 3.4955392636051128,
-        "mean": 13.950222159085209
+        "std": 8.0794902890074969,
+        "np_rel": 5.6448041538056613,
+        "mean": 19.26236773190433
       },
       "ops": {
-        "std": 80.466218835954109,
+        "std": 120.40296225399184,
         "np_rel": 20.0,
-        "mean": 65.860877298328973
+        "mean": 102.84204515692306
       }
     },
     "name": "pint",
@@ -1816,19 +1407,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.064147940524254529,
-        "np_rel": 0.98858136721113132,
-        "mean": 0.064044782560165617
+        "std": 0.080051818280069159,
+        "np_rel": 0.95326735783851713,
+        "mean": 0.079279076563168877
       },
       "ufunc": {
-        "std": 12.257549414033072,
-        "np_rel": 1.0080411991496816,
-        "mean": 10.326116052392411
+        "std": 11.728741672144498,
+        "np_rel": 0.98427347213856486,
+        "mean": 10.054882258585055
       },
       "ops": {
-        "std": 2.7111751886321098,
-        "np_rel": 0.99649678951702336,
-        "mean": 2.3931656798271286
+        "std": 2.0082223399770061,
+        "np_rel": 1.0178951617155356,
+        "mean": 1.8284794402449098
       }
     },
     "name": "piquant",
@@ -2020,19 +1611,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.075413120930147695,
-        "np_rel": 0.9914760284356996,
-        "mean": 0.096112081449325773
+        "std": 0.074925423212265405,
+        "np_rel": 0.9891414181917334,
+        "mean": 0.10070735461091342
       },
       "ufunc": {
-        "std": 1.3241632546381412,
-        "np_rel": 2.1901609639040864,
-        "mean": 2.550134920094111
+        "std": 1.2485986665841584,
+        "np_rel": 2.9441895392537383,
+        "mean": 2.7338576643434291
       },
       "ops": {
-        "std": 1.1365760390541344,
-        "np_rel": 12.619946394682641,
-        "mean": 9.165224963671541
+        "std": 2.0175005503140344,
+        "np_rel": 19.67253133439025,
+        "mean": 11.408376367124793
       }
     },
     "name": "quantities",
@@ -2224,19 +1815,19 @@
     },
     "speed": {
       "make": {
-        "std": 0.063577128084004203,
-        "np_rel": 0.99157429469249625,
-        "mean": 0.093783417793169413
+        "std": 0.088010873606572448,
+        "np_rel": 0.97788943309125709,
+        "mean": 0.11346274859284701
       },
       "ufunc": {
-        "std": 12.282831946181084,
-        "np_rel": 1.216392615397162,
-        "mean": 12.470741794533925
+        "std": 12.468278402052169,
+        "np_rel": 1.2794845391221257,
+        "mean": 13.180737626062681
       },
       "ops": {
-        "std": 1.3501046350602801,
-        "np_rel": 2.7201022146507667,
-        "mean": 2.7117141305583798
+        "std": 1.4073139337583169,
+        "np_rel": 3.871422354496536,
+        "mean": 3.0652513242747688
       }
     },
     "name": "scimath",
@@ -2291,19 +1882,19 @@
         "ones_like": true
       },
       "binary_compatible_ops": {
-        "gt": false,
+        "gt": true,
         "ge": false,
         "le": false,
         "sub": true,
         "pow": false,
-        "lt": false,
+        "lt": true,
         "ne": false,
         "add": true,
         "floordiv": true,
         "truediv": true,
         "mul": true,
         "div": true,
-        "eq": false,
+        "eq": true,
         "mod": false
       },
       "binary_compatible_ufuncs": {
@@ -2364,11 +1955,11 @@
       "other_numpy": {
         "sort": true,
         "concatenate": true,
-        "median": true,
+        "median": false,
         "argsort": true,
         "std": false,
-        "where": false,
-        "mean": true
+        "where": true,
+        "mean": false
       },
       "binary_different_ufuncs": {
         "not_equal": false,
@@ -2394,19 +1985,19 @@
         "greater": false
       },
       "binary_same_ops": {
-        "gt": false,
+        "gt": true,
         "ge": false,
         "le": false,
         "sub": true,
         "pow": false,
-        "lt": false,
+        "lt": true,
         "ne": false,
         "add": true,
         "floordiv": true,
         "truediv": true,
         "mul": true,
         "div": true,
-        "eq": false,
+        "eq": true,
         "mod": false
       },
       "binary_different_ops": {
@@ -2428,9 +2019,9 @@
     },
     "speed": {
       "make": {
-        "std": 0.064605590861502415,
-        "np_rel": 0.99026441483648331,
-        "mean": 0.070759694870204143
+        "std": 0.07463816160879537,
+        "np_rel": 0.95880762934480523,
+        "mean": 0.082254409790039062
       },
       "ufunc": {
         "std": 20.0,
@@ -2438,15 +2029,219 @@
         "mean": 20.0
       },
       "ops": {
-        "std": 0.72029293266030581,
-        "np_rel": 1.5593969458327561,
-        "mean": 0.95584457867766082
+        "std": 0.64879894845445263,
+        "np_rel": 2.4707736134603402,
+        "mean": 1.1330679671405113
       }
     },
     "name": "unum",
     "syntax": {
       "print": "5.0 [m]",
       "make": "multiply"
+    }
+  },
+  {
+    "facts": {
+      "LOC": "N/A",
+      "Most recent release": "N/A",
+      "Implementation": "Subclass",
+      "PyPI": "yt",
+      "URL": "http://yt-project.org",
+      "First Release": "N/A"
+    },
+    "compatibility": {
+      "unary_ufuncs": {
+        "square": true,
+        "arcsinh": false,
+        "rint": true,
+        "sign": true,
+        "conjugate": true,
+        "tan": false,
+        "absolute": true,
+        "deg2rad": false,
+        "log": false,
+        "floor": true,
+        "exp2": false,
+        "negative": true,
+        "sqrt": true,
+        "arctan": false,
+        "log10": false,
+        "sin": false,
+        "rad2deg": false,
+        "log2": false,
+        "arcsin": false,
+        "cos": false,
+        "ceil": true,
+        "arctanh": false,
+        "sinh": false,
+        "cosh": false,
+        "trunc": true,
+        "expm1": false,
+        "reciprocal": true,
+        "tanh": false,
+        "arccosh": false,
+        "exp": false,
+        "arccos": false,
+        "log1p": false,
+        "ones_like": true
+      },
+      "binary_compatible_ops": {
+        "gt": true,
+        "ge": true,
+        "le": true,
+        "sub": true,
+        "pow": false,
+        "lt": true,
+        "ne": true,
+        "add": true,
+        "floordiv": true,
+        "truediv": true,
+        "mul": true,
+        "div": true,
+        "eq": true,
+        "mod": true
+      },
+      "binary_compatible_ufuncs": {
+        "not_equal": true,
+        "logaddexp2": true,
+        "divide": true,
+        "power": true,
+        "less": true,
+        "remainder": true,
+        "true_divide": true,
+        "minimum": true,
+        "equal": true,
+        "arctan2": true,
+        "maximum": true,
+        "less_equal": true,
+        "add": true,
+        "hypot": true,
+        "fmod": true,
+        "multiply": true,
+        "greater_equal": true,
+        "floor_divide": true,
+        "subtract": true,
+        "logaddexp": true,
+        "greater": true
+      },
+      "binary_same_ufuncs": {
+        "not_equal": true,
+        "logaddexp2": true,
+        "divide": true,
+        "power": true,
+        "less": true,
+        "remainder": true,
+        "true_divide": true,
+        "minimum": true,
+        "equal": true,
+        "arctan2": true,
+        "maximum": true,
+        "less_equal": true,
+        "add": true,
+        "hypot": true,
+        "fmod": true,
+        "multiply": true,
+        "greater_equal": true,
+        "floor_divide": true,
+        "subtract": true,
+        "logaddexp": true,
+        "greater": true
+      },
+      "unary_ops": {
+        "neg": true,
+        "abs": true,
+        "pos": true
+      },
+      "syntax": {
+        "print": "[  5.  10.] m",
+        "shape": "(2,)"
+      },
+      "other_numpy": {
+        "sort": true,
+        "concatenate": true,
+        "median": true,
+        "argsort": true,
+        "std": true,
+        "where": true,
+        "mean": true
+      },
+      "binary_different_ufuncs": {
+        "not_equal": true,
+        "logaddexp2": true,
+        "divide": true,
+        "power": true,
+        "less": true,
+        "remainder": true,
+        "true_divide": true,
+        "minimum": true,
+        "equal": true,
+        "arctan2": true,
+        "maximum": true,
+        "less_equal": true,
+        "add": true,
+        "hypot": true,
+        "fmod": true,
+        "multiply": true,
+        "greater_equal": true,
+        "floor_divide": true,
+        "subtract": true,
+        "logaddexp": true,
+        "greater": true
+      },
+      "binary_same_ops": {
+        "gt": true,
+        "ge": true,
+        "le": true,
+        "sub": true,
+        "pow": false,
+        "lt": true,
+        "ne": true,
+        "add": true,
+        "floordiv": true,
+        "truediv": true,
+        "mul": true,
+        "div": true,
+        "eq": true,
+        "mod": true
+      },
+      "binary_different_ops": {
+        "gt": false,
+        "ge": false,
+        "le": false,
+        "sub": false,
+        "pow": false,
+        "lt": false,
+        "ne": false,
+        "add": false,
+        "floordiv": true,
+        "truediv": true,
+        "mul": true,
+        "div": true,
+        "eq": false,
+        "mod": true
+      }
+    },
+    "speed": {
+      "make": {
+        "std": 0.10243138953990417,
+        "np_rel": 0.93585018687572441,
+        "mean": 0.11735256404092867
+      },
+      "ufunc": {
+        "std": 9.317344595391539,
+        "np_rel": 9.1741146488984029,
+        "mean": 53.613288761818247
+      },
+      "ops": {
+        "std": 6.6110397230123006,
+        "np_rel": 20.0,
+        "mean": 72.329517913191282
+      }
+    },
+    "name": "yt.data_objects.yt_array",
+    "syntax": {
+      "print": "5.0 m",
+      "make": "constructor"
     }
   }
 ]
