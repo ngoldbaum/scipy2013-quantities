@@ -250,7 +250,7 @@ class BenchModule(object):
         return tuple(np_args), tuple(args)
 
     def time_func(self, func, shapes=((1,), (1000,), (100, 100)),
-                  iters=50, timeout=2000.0, verbose=False):
+                  iters=50, timeout=2000.0, verbose=True):
         np_time = []
         time = []
         argspec = inspect.getargspec(func)
@@ -286,7 +286,7 @@ class BenchModule(object):
             print "{}.{}: {:.3f} +/- {:.2f} ms, {:.2f}x numpy".format(
                 self.name, func.__name__, mean, std, np_rel)
 
-        return mean, std, min(np_rel, 20.0)
+        return mean, std, np_rel
 
     def time_make(self, shape):
         with Timer() as t:
