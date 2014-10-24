@@ -1,7 +1,6 @@
 import benchmarks.bench_astropy
 import benchmarks.bench_dimensions
 import benchmarks.bench_dimpy
-import benchmarks.bench_ipython_physics
 import benchmarks.bench_magnitude
 import benchmarks.bench_numericalunits
 #import benchmarks.bench_physical_quantities
@@ -18,6 +17,7 @@ import json
 import warnings
 
 import numpy as np
+import pandas as pd
 
 warnings.simplefilter('ignore')
 np.seterr(all='ignore')

@@ -1,5 +1,6 @@
 import numpy as np
 import astropy.units
+import astropy.units.imperial
 
 import base
 
@@ -23,11 +24,10 @@ class BenchAstropy(base.BenchModule):
         return "multiply"
 
     def make(self, ndarray, units):
-        u = getattr(astropy.units, units, None)
-        if u is None:
-            print units
-            raise AttributeError
-        return u*ndarray
+        try:
+            return getattr(astropy.units, units) * ndarray
+        except:
+            return getattr(astropy.units.imperial, units) * ndarray
 
 if __name__ == '__main__':
     import warnings
