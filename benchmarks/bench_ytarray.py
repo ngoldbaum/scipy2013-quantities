@@ -1,12 +1,11 @@
 import numpy as np
-import yt.data_objects.yt_array as yta
-import yt.utilities.units as ytu
+import yt.units.yt_array as yta
 
 import base
 
 class BenchYTUnits(base.BenchModule):
     facts = {
-        'LOC': "N/A",
+        'LOC': 2496,
         'First Release': "N/A",
         "Most recent release": "N/A",
         "Implementation": "Subclass",

@@ -250,7 +250,7 @@ class BenchModule(object):
         return tuple(np_args), tuple(args)
 
     def time_func(self, func, shapes=((1,), (1000,), (100, 100)),
-                  iters=50, timeout=2000.0, verbose=True):
+                  iters=50, timeout=20000.0, verbose=True):
         np_time = []
         time = []
         argspec = inspect.getargspec(func)

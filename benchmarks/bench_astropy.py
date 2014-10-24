@@ -23,8 +23,11 @@ class BenchAstropy(base.BenchModule):
         return "multiply"
 
     def make(self, ndarray, units):
-        return getattr(astropy.units, units) * ndarray
-
+        u = getattr(astropy.units, units, None)
+        if u is None:
+            print units
+            raise AttributeError
+        return u*ndarray
 
 if __name__ == '__main__':
     import warnings
