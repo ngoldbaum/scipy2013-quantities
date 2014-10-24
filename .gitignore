@@ -4,3 +4,9 @@ results.csv
 *.pyc
 *.kdev4
 .ipynb_checkpoints
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+
